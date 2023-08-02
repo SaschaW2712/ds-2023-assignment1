@@ -1,4 +1,4 @@
-all: compile server test
+all: compile
 
 compile: Calculator.java CalculatorImplementation.java CalculatorServer.java CalculatorClient.java CalculatorTests.java
 	javac -d classfiles $^
