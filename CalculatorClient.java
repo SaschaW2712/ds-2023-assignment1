@@ -33,7 +33,7 @@ public class CalculatorClient {
 
         PrintStream outputStream;
 
-        if (args[0] == "sysout") {
+        if (args[0].equals("sysout")) {
             outputStream = System.out;
         } else {
             try {
