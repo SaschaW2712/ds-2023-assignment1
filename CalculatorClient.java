@@ -55,7 +55,7 @@ public class CalculatorClient {
 
             //Parse command-line inputs
             boolean delayFlag = false;
-            inputLoop: for (String input: args) {
+            for (String input: args) {
                 
                 //Try to parse an integer input - if an exception is caught, it's a different operation
                 try {

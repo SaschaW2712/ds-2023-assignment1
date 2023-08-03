@@ -1,25 +1,11 @@
-To run the project, follow these steps:
-1. Start the server with "make server"
-2. Running clients:\
+To use this project, follow these steps:
+1. Compile the project ("make" or "make compile")
+2. Navigate to the classfiles directory ("cd classfiles") and start the registry ("rmiregistry &")
+3. Return to the root directory ("cd ..")
+4. Start the server ("make server")
+5. Run a client or automated tests:\
 (a) To run automated tests, run "make test".\
 (b) To run a client using the calculator server, see "Run client with custom input" below.
-
-<br >
-
-Compile classfiles without running anything:\
-make compile
-
-<br >
-
-Start server:\
-make server
-- This will also recompile the class files if they've changed
-
-<br >
-
-Run tests:\
-make test
-- This will also recompile the class files if they've changed
 
 <br >
 
@@ -41,3 +27,23 @@ Valid operations are:
 - 'empty': Will print 'true' or 'false' depending on whether the stack is empty
 - 'delaypop': Must be followed by an integer argument, and will pop with the following argument's delay in milliseconds.
   - E.g. "delaypop 2000" will run pop with delay 2000ms
+
+
+MAKEFILE TARGETS:\
+
+Compile classfiles without running anything:\
+make
+
+<br >
+
+Start server:\
+make server
+- This will also recompile the class files if they've changed
+
+<br >
+
+Run tests:\
+make test
+- This will also recompile the class files if they've changed
+
+<br >
