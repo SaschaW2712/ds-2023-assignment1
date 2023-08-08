@@ -10,7 +10,6 @@ import java.io.IOError;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.rmi.NotBoundException;
-import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
 import java.util.Arrays;

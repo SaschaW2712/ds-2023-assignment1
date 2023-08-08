@@ -47,7 +47,7 @@ public class CalculatorClient {
         try {
             //Set up server stub
             
-            Registry registry = LocateRegistry.getRegistry();
+            Registry registry = LocateRegistry.getRegistry(null, 9999);
             Calculator stub = (Calculator) registry.lookup("Calculator");
 
             int clientId = stub.initClient();

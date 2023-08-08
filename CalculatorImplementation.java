@@ -1,7 +1,6 @@
 package assignment1;
 	
 import java.rmi.registry.Registry;
-import java.rmi.registry.LocateRegistry;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -86,7 +85,7 @@ public class CalculatorImplementation implements Calculator {
   
     //Waits 'millis' time in milliseconds, then returns the top value of the client's stack
     public int delayPop(int clientId, int millis) throws RemoteException, InterruptedException {
-        System.out.println("Popping value for clientId " + clientId + "with delay " + millis);
+        System.out.println("Popping value for clientId " + clientId + " with delay " + millis);
         try {
             TimeUnit.MILLISECONDS.sleep(millis);
         } catch(InterruptedException e) {
