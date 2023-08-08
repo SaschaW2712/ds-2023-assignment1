@@ -1,17 +1,17 @@
 To use this project, follow these steps:
 1. Compile the project (`make` or `make compile`)
-2. Navigate to the classfiles directory (`cd classfiles`) and start the registry (`rmiregistry &`)
+2. Navigate to the classfiles directory (`cd classfiles`) and start the registry (`rmiregistry 9999 &`)
 3. Return to the root directory (`cd ..`)
-4. Start the server (`make server`)
-5. Run a client or automated tests:\
+4. Start the server (`make server`). The server will stay active and display output messages.
+5. In a new terminal tab, run a client or automated tests:\
 (a) To run automated tests, run `make test`.\
 (b) To run a client using the calculator server, see "Run client with custom input" below.
 
 <br >
 
 Run client with custom input:\
-`java  -classpath classfiles assignment1.CalculatorClient [CLI arguments]`
-- E.g. `java  -classpath classfiles assignment1.CalculatorClient 3 4 5 6 min pop`
+`java  -classpath classfiles assignment1.CalculatorClient [CLIENT INPUTS]`
+- E.g. `java  -classpath classfiles assignment1.CalculatorClient sysout 3 4 5 6 min pop`
 - Ensure server is running first
 
 <br >

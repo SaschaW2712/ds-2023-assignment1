@@ -4,7 +4,7 @@ compile: Calculator.java CalculatorImplementation.java CalculatorServer.java Cal
 	javac -d classfiles $^
 
 server: compile
-	java -classpath classfiles assignment1.CalculatorServer &
+	java -classpath classfiles assignment1.CalculatorServer
 
 test: compile
 	java -classpath classfiles assignment1.CalculatorTests

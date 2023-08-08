@@ -17,13 +17,7 @@ public class CalculatorClient {
     public static void main(String[] args) {
 
 	    if (args.length < 2) {
-            System.out.println("Usage: enter space-separated arguments. The first must be the output file name, or 'sysout' for standard System output. Valid args are:");
-            System.out.println(" • An integer value (will be pushed onto stack)");
-            System.out.println(" • 'min', 'max', 'lcm', or 'gcd' (will pop all stack elements and push the operation's result)");
-            System.out.println(" • 'pop' (will print the top element on the stack)");
-            System.out.println(" • 'empty' (will print 'true' or 'false' whether the stack is empty)");
-            System.out.println(" • 'delaypop' (will run pop, delayed in milliseconds following integer arg's milliseconds)");
-            System.out.println();
+            System.out.println("Too few arguments provided. Please see README for information on running a client with custom input.");
             System.out.println("Provided args: " + Arrays.toString(args));
             return;
         }
